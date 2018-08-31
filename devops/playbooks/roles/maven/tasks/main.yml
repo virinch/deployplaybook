@@ -1,0 +1,4 @@
+---
+# tasks file for maven
+- name: installing maven
+  package: name=maven state=present

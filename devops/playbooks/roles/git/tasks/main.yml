@@ -1,0 +1,7 @@
+---
+# tasks file for git
+- name: installing git client
+  package: name=git state=present
+
+- name: clone git url
+  git: repo=https://github.com/demoglot/java.git dest=/opt/java

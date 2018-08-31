@@ -1,0 +1,10 @@
+---
+# tasks file for tomcat
+- name: installing tomcat
+  package: name=tomcat state=present
+
+- name: starting tomcat
+  service: name=tomcat state=started enabled=yes
+
+- name: installing java for tomcat
+  package: name=java state=present

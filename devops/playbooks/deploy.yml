@@ -1,0 +1,11 @@
+---
+- hosts: buildserver
+  roles:
+    - jenkins
+    - git
+    - maven
+    - java
+
+- hosts: qaserver
+  roles:
+    - tomcat
